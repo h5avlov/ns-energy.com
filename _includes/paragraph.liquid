@@ -1,0 +1,10 @@
+{% assign data = include.data %} 
+
+
+<p class= "text-entry"> 
+	{{ data.text }}
+
+	{% if data.image %} 
+		{% include image.liquid data = data.image %} 
+	{% endif %}
+</p>

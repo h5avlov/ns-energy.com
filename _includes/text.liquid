@@ -1,0 +1,8 @@
+{% assign entries = include.data %}
+
+
+{% for entry in entries %} 
+
+	{% include paragraph.liquid data = {{ entry }} %} 
+
+{% endfor %}

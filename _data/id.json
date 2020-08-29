@@ -1,8 +1,9 @@
 { 
 	"organization": "Foundation", 
-	"tagline": "Build faster", 
+	"tagline": "Build fast", 
 	"description": "Basic template for developing static websites", 
 	"logo": { 
 		"src": null 
-	} 
+	}
+
 }

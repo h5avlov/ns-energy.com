@@ -1,0 +1,8 @@
+{% assign entries = include.data %}
+
+
+<article class= "key-value-pair-list"> 
+{% for entry in entries %} 
+	{% include key-value-pair.liquid data = {{ entry }} %} 
+{% endfor %}
+</article>

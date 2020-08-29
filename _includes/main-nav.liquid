@@ -1,1 +1,7 @@
-<nav>Main nav</nav> 
+{% assign nav = include.data %}
+
+<nav class= "main-nav"> 
+	<h6 class= "helper-heading">{{ nav.heading }}</h6> 
+
+	{% include entry-list.liquid data = nav.body %} 
+</nav> 

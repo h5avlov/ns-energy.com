@@ -1,4 +1,18 @@
+{% assign data = include.data %}
+
+
 <article class= "id">
-	<h1 class= "organization">Foundation</h1>
-	<p class= "tagline">Basic template for developing static websites</p> 
+	<h1 class= "organization">{{ data.organization }}</h1> 
+
+	{% if data.tagline %}
+		<p class= "tagline">{{ data.tagline }}</p> 
+	{% endif %} 
+
+	{% if data.description %} 
+		<p class= "description">{{ data.description }}</p> 
+	{% endif %} 
+
+	{% if data.logo.src %}
+		<img class= "logo" src= "{{ data.logo.src }}" alt= "{{ data.logo.alt }}" /> 
+	{% endif %}
 </article> 

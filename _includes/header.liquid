@@ -1,9 +1,12 @@
+{% assign data = site.data %}
+
+
 <header class= "header"> 
 
-	{% include id.liquid data = site.data.id %} 
+	{% include id.liquid data = data.id %} 
 
-	{% include main-nav.liquid data = site.data.mainNav %} 
+	{% include main-nav.liquid data = data.mainNav %} 
 
-	{% include quick-contact.liquid %} 
+	{% include quick-contact.liquid data = site.data.quickContact %} 
 
 </header>

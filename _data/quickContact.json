@@ -1,0 +1,36 @@
+[
+	{ 
+		"heading": { 
+			"level": 2, 
+			"text": "Phones" 
+		}, 
+
+		"text": [
+			{ 
+				"text": "1" 
+			}, 
+
+			{ 
+				"text": "2" 
+			}, 
+			
+			{ 
+				"text": "3" 
+			} 
+		], 
+
+		"entries": [ 
+			{
+				"key": "office", 
+				"value": "0888 12 34 56" 
+			}, 
+
+			{
+				"key": "store", 
+				"value": "0888 21 56 78" 
+			}
+		]
+
+	} 
+
+]

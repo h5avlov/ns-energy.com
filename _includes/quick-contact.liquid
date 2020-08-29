@@ -1,1 +1,8 @@
-<section>Quick contact</section> 
+{% assign entries = include.data %}
+
+
+<section class= "quick-contact"> 
+
+	{% include entry-set.liquid data = entries %}  
+	
+</section> 

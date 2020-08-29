@@ -1,7 +1,14 @@
-{% include heading.liquid %}
+{% assign block = include.data %}
 
-{% include text.liquid %} 
 
-{% include image.liquid %} 
+{% include heading.liquid data = block.heading %}
 
-{% include link.liquid %} 
+{% include text.liquid data = block.text %} 
+
+{% if block.image %}
+	{% include image.liquid data = block.image %} 
+{% endif %}
+
+{% if block.link %}
+	{% include link.liquid data = block.link %} 
+{% endif %}

@@ -1,19 +1,22 @@
-{% assign data = include.data %} 
+{% assign id = include.data %} 
 
 
 <article class= "id"> 
 	<h1 class= "heading site-title">
-		{{ data.organization }} 
-		{% if data.logo.src %}
-			<img class= "logo" src= "{{ data.logo.src }}" alt= "{{ data.logo.alt }}" /> 
+		{{ id.organization }} 
+
+		{% if id.logo %}
+			{% assign logo = id.logo %} 
+			
+			<img class= "logo" src= "{{ logo.src }}" alt= "{{ logo.alt }}" /> 
 		{% endif %} 
 	</h1> 
 
-	{% if data.tagline %}
-		<p class= "tagline">{{ data.tagline }}</p> 
+	{% if id.tagline %}
+		<p class= "tagline">{{ id.tagline }}</p> 
 	{% endif %} 
 
-	{% if data.description %} 
-		<p class= "description">{{ data.description }}</p> 
+	{% if id.description %} 
+		<p class= "description">{{ id.description }}</p> 
 	{% endif %} 
 </article> 

@@ -1,10 +1,16 @@
-{% assign data = include.data %}
+{% assign entries = include.data %} 
 
 
 {% for entry in entries %} 
 
-	<article> 
-		{% include {{ template }} data = {{ entry }} %} 
-	</article>
+	{% if entry.heading %}
+		{% include heading.liquid data = entry.heading %} 
+	{% endif %}
+
+	{% if entry.text %}
+		{% include text.liquid data = entry.text %} 
+	{% endif %}
+	
+	{% include key-value-pair-list.liquid data = entry.entries %} 
 
 {% endfor %}

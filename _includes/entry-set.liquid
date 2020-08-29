@@ -1,0 +1,10 @@
+{% assign data = include.data %}
+
+
+{% for entry in entries %} 
+
+	<article> 
+		{% include {{ template }} data = {{ entry }} %} 
+	</article>
+
+{% endfor %}

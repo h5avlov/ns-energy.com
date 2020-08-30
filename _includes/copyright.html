@@ -1,10 +1,12 @@
 {% assign data = include.data %} 
 
-<article> 
+
+<article class= "copyright"> 
+
 	{% include paragraph.html className = "year" data = data.year %}
 
 	{% include paragraph.html className = "id" data = data.id %} 
 
 	{% include paragraph.html className = "notice" data = data.notice %} 
-	
+
 </article> 

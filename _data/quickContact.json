@@ -1,42 +1,43 @@
-[
-	{ 
+{
+	"head": { 
 		"heading": { 
-			"level": 2, 
-			"text": "Phone" 
+			"text": "Quick Contact"
 		}, 
 
-		"entries": [ 
+		"text": [
 			{
-				"key": "office", 
-				"value": "0888 12 34 56" 
-			}, 
-
-			{
-				"key": "store", 
-				"value": "0888 21 56 78" 
+				"text": "Quick Contact Text" 
 			}
 		]
-
 	}, 
 
-	{ 
-		"heading": { 
-			"level": 2, 
-			"text": "Email" 
-		}, 
+	"body": { 
+		"template": "entry-set.html", 
 
-		"entries": [ 
-			{
-				"key": "sales", 
-				"value": "sales@example.com" 
-			}, 
+		"entries": [
+			{ 
+				"heading": { 
+					"level": 2, 
+					"text": "Phone" 
+				}, 
+						
+				"text": [
+					{
+						"text": "Phone Text" 
+					}
+				], 
 
-			{
-				"key": "management", 
-				"value": "@example.com" 
+				"entries": [ 
+					{
+						"key": "office", 
+						"value": "0888 12 34 56" 
+					}
+				]
+
 			}
+
 		]
 
-	} 
+	}
 
-]
+}

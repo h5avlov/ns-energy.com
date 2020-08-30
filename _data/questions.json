@@ -1,0 +1,19 @@
+{ 
+	"head": {
+		"heading": { 
+			"text": "Questions" 
+		}, 
+
+		"text": [ 
+			{
+				"text": "Questions Text" 
+			}
+		], 	
+
+		"link": {
+			"target": "", 
+			"text": "Read more" 
+		}
+	}
+
+}

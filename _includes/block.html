@@ -1,14 +1,26 @@
 {% assign block = include.data %}
 
 
-{% include heading.html data = block.heading %}
+{% capture text-content %} 
+	{% include heading.html data = block.heading %}
 
-{% include text.html data = block.text %} 
+	{% if block.text %}
+		{% include text.html data = block.text %} 
+	{% endif %}
+
+	{% if block.link %}
+		{% include link.html data = block.link %} 
+	{% endif %} 
+{% endcapture %} 
+
+{% if block.textContent %} 
+	<section class= "text-content"> 
+		{{ text-content }} 
+	</section>
+{% else %} 
+	{{ text-content }} 
+{% endif %}
 
 {% if block.image %}
 	{% include image.html data = block.image %} 
-{% endif %}
-
-{% if block.link %}
-	{% include link.html data = block.link %} 
 {% endif %}

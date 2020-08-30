@@ -1,0 +1,20 @@
+{ 
+	"textContent": false, 
+
+	"heading": { 
+		"level": 3, 
+		"text": "Heading" 
+	}, 
+
+	"text": [ 
+		{
+			"text": "Text"
+		}
+	], 	
+
+	"link": {
+		"target": "", 
+		"text": "Read more" 
+	}
+
+}

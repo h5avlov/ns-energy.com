@@ -1,5 +1,6 @@
 {% assign data = include.data %} 
 {% assign template = include.body %} 
+{% assign head = data.head %} 
 {% assign body = data.body %}
 
 {% assign className = "" %} 
@@ -10,11 +11,13 @@
 
 <section class= "section{{ className }}"> 
 	
-	{% include block.html level = 2 data = data.head %} 
+	{% if head %}
+		{% include block.html level = 2 data = head %} 
+	{% endif %}
 
 	{% if body %} 
 		<section class= "body"> 
-			{% include {{ template }} data = include.data.body %} 
+			{% include {{ template }} data = body %} 
 		</section>
 	{% endif %}
 

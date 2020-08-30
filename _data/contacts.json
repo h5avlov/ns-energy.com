@@ -1,0 +1,88 @@
+{ 
+	"head": { 
+		"heading": {}, 
+		"text": [] 
+	}, 
+
+	"body": { 
+		"level": 3, 
+
+		"entries": [ 
+			{ 
+				"heading": {
+					"text": "Address"
+				}, 
+				"text": [
+					{ 
+						"text": "Address Text"
+
+					}
+				], 
+
+				"entries": [ 
+					{
+						"key": "City", 
+						"value": "Sofia"
+					}, 
+
+					{
+						"key": "Street", 
+						"value": "Alexander Malinov"
+					}, 
+
+					{
+						"key": "Number", 
+						"value": "25" 
+					}
+
+				]
+
+			}, 
+
+			{ 
+				"heading": {
+					"text": "Phone"
+				}, 
+				"text": [
+					{ 
+						"text": "Phone Text"
+
+					}
+				], 
+
+				"entries": [ 
+					{
+						"key": "office", 
+						"value": "0888 12 34 56" 
+					}
+
+				]
+
+			}, 
+
+			{ 
+				"heading": {
+					"text": "Email"
+				}, 
+				"text": [
+					{ 
+						"text": "Email Text"
+		
+					}
+				], 
+		
+				"entries": [ 
+					{
+						"key": "office", 
+						"value": "email@example.com" 
+					}
+		
+				]
+		
+			}
+
+		]
+
+	} 
+
+}

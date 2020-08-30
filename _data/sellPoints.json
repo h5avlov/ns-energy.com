@@ -1,0 +1,50 @@
+{ 
+	"head": {
+		"heading": { 
+			"text": "Banner Heading"
+		}, 
+		
+		"text": [ 
+			{ 
+				"text": "Banner Text" 
+			}
+		]
+	}, 
+
+	"body": { 
+		"template": "block.html", 
+
+		"entries": [ 
+			{ 
+				"heading": { 
+					"text": "Slide Heading 1"
+				}, 
+				"text": [ 
+					{ 
+						"text": "Slide Text 1" 
+					}
+				], 
+				"link": { 
+					"text": "Read More" 
+				}
+			}, 
+
+			{ 
+				"heading": { 
+					"text": "Slide Heading 2"
+				}, 
+				"text": [ 
+					{ 
+						"text": "Slide Text 2" 
+					}
+				], 
+				"link": { 
+					"text": "Read More" 
+				}
+			}
+
+		]
+
+	}
+
+}

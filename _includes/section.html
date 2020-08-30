@@ -1,4 +1,6 @@
 {% assign data = include.data %} 
+{% assign template = include.body %} 
+{% assign body = data.body %}
 
 {% assign className = "" %} 
 {% if include.className %} 
@@ -8,16 +10,10 @@
 
 <section class= "section{{ className }}"> 
 	
-	{% include heading.html data = data.heading %} 
-
-	{% include text.html data = data.text %} 
-
-	{% include image.html data = data.image %} 
+	{% include block.html data = data.head %} 
 
 	<section class= "body"> 
-
-		{% include {{ data.template }} %} 
-
+		{% include {{ template }} data = include.data.body %} 
 	</section>
 
 </section> 

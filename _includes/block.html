@@ -1,14 +1,14 @@
 {% assign block = include.data %}
 
 
-{% include heading.liquid data = block.heading %}
+{% include heading.html data = block.heading %}
 
-{% include text.liquid data = block.text %} 
+{% include text.html data = block.text %} 
 
 {% if block.image %}
-	{% include image.liquid data = block.image %} 
+	{% include image.html data = block.image %} 
 {% endif %}
 
 {% if block.link %}
-	{% include link.liquid data = block.link %} 
+	{% include link.html data = block.link %} 
 {% endif %}

@@ -1,10 +1,10 @@
 {% assign data = include.data %} 
 
 <article> 
-	{% include paragraph.liquid className = "year" data = data.year %}
+	{% include paragraph.html className = "year" data = data.year %}
 
-	{% include paragraph.liquid className = "id" data = data.id %} 
+	{% include paragraph.html className = "id" data = data.id %} 
 
-	{% include paragraph.liquid className = "notice" data = data.notice %} 
+	{% include paragraph.html className = "notice" data = data.notice %} 
 	
 </article> 

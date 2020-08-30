@@ -1,0 +1,19 @@
+{ 
+	"head": {
+		"heading": { 
+			"text": "About Us" 
+		}, 
+
+		"text": [ 
+			{
+				"text": "Text" 
+			}
+		], 	
+
+		"link": {
+			"target": "", 
+			"text": "Read more" 
+		}
+	}
+
+}

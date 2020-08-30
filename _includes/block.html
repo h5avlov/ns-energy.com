@@ -1,8 +1,9 @@
-{% assign block = include.data %}
+{% assign block = include.data %} 
+{% assign level = include.level %}
 
 
 {% capture text-content %} 
-	{% include heading.html data = block.heading %}
+	{% include heading.html level = level data = block.heading %} 
 
 	{% if block.text %}
 		{% include text.html data = block.text %} 

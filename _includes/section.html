@@ -10,10 +10,12 @@
 
 <section class= "section{{ className }}"> 
 	
-	{% include block.html data = data.head %} 
+	{% include block.html level = 2 data = data.head %} 
 
-	<section class= "body"> 
-		{% include {{ template }} data = include.data.body %} 
-	</section>
+	{% if body %} 
+		<section class= "body"> 
+			{% include {{ template }} data = include.data.body %} 
+		</section>
+	{% endif %}
 
 </section> 

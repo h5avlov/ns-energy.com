@@ -13,6 +13,7 @@
 
 	"body": { 
 		"template": "block.html", 
+		"level": 3, 
 
 		"entries": [ 
 			{ 

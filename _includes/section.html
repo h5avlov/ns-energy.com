@@ -1,4 +1,22 @@
-<section> 
-	{% include heading.html %} 
+{% assign data = include.data %} 
 
-</section>
+{% assign className = "" %} 
+{% if include.className %} 
+	{% assign className = " " | append: include.className %} 
+{% endif %}
+
+
+<section class= "section{{ className }}"> 
+	{% include heading.html data = data.heading %} 
+
+	{% include text.html data = data.text %} 
+
+	{% include image.html data = data.image %} 
+
+	<section class= "body"> 
+
+		{% include {{ data.template }} %} 
+
+	</section>
+
+</section> 

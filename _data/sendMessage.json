@@ -1,0 +1,50 @@
+{
+	"head": { 
+		"heading": { 
+			"level": 3, 
+			"text": "Contact Form"
+		}, 
+
+		"text": [ 
+			{ 
+				"text": "Contact Form Text"
+			}
+
+		] 
+	}, 
+
+	"body": { 
+		"fields": [ 
+			{
+				"element": "input", 
+				"type": "text", 
+				"name": "name", 
+				"value": "Your name", 
+				"required": false
+			}, 
+
+			{
+				"element": "input", 
+				"type": "email",
+				"name": "email", 
+				"value": "Your email", 
+				"required": true 
+			}, 
+
+			{
+				"element": "textarea", 
+				"type": "text",
+				"name": "message", 
+				"value": "Your message", 
+				"required": true 
+			} 
+
+		], 
+
+		"submit": {
+			"text": "Send" 
+		}
+
+	}
+
+}

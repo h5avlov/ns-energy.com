@@ -2,7 +2,7 @@
 	"heading": "Main navigation", 
 
 	"body": {
-		"template": "link.liquid", 
+		"template": "link.html", 
 
 		"entries": [ 
 			{

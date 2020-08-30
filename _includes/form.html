@@ -4,15 +4,14 @@
 <form action="post"> 
 	{% for field in fields %} 
 		{% capture props %} 
-			name= "{{ field.name }}" 
-			type= "{{ field.type }}" 
+			name= "{{ field.name }}"  
 			required= "{{ field.required }}" 
 			placeholder= "{{ field.value }}" 
 		{% endcapture %} 
 
 		{% case field.element %} 
-			{% when "input" %}
-				<input {{ props }} /> 
+			{% when "input" %} 
+				<input {{ props }} type= "{{ field.type }}" /> 
 			{% when "textarea" %} 
 				<textarea {{ props }}></textarea> 
 		{% endcase %}

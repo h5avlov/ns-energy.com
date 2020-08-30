@@ -3,14 +3,18 @@
 
 {% for entry in entries %} 
 
-	{% if entry.heading %}
-		{% include heading.liquid data = entry.heading %} 
-	{% endif %}
+	<article class= "entry set-entry"> 
 
-	{% if entry.text %}
-		{% include text.liquid data = entry.text %} 
-	{% endif %}
-	
-	{% include key-value-pair-list.liquid data = entry.entries %} 
+		{% if entry.heading %}
+			{% include heading.liquid data = entry.heading %} 
+		{% endif %}
+
+		{% if entry.text %}
+			{% include text.liquid data = entry.text %} 
+		{% endif %}
+		
+		{% include key-value-pair-list.liquid data = entry.entries %} 
+
+	</article>
 
 {% endfor %}

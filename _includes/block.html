@@ -3,7 +3,9 @@
 
 
 {% capture text-content %} 
-	{% include heading.html level = level data = block.heading %} 
+	{% if block.heading %}
+		{% include heading.html level = level data = block.heading %} 
+	{% endif %}
 
 	{% if block.text %}
 		{% include text.html data = block.text %} 

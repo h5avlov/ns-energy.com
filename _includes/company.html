@@ -1,9 +1,10 @@
+{% assign company = include.data %}
 
 
 <section class= "company"> 
 
-	{% include id.html data = site.data.id %} 
+	{% include id.html data = company.id %} 
 
-	{% include paragraph.html className = "company-description" data = site.data.company %} 
+	{% include paragraph.html className = "company-description" data = company.description %} 
 
 </section> 

@@ -1,11 +1,8 @@
-{% assign data = site.data %}
-
-
 <header class= "header"> 
 
-	{% include id.html data = data.id %} 
+	{% include id.html data = site.data.company.id %} 
 
-	{% include main-nav.html data = data.mainNav %} 
+	{% include main-nav.html data = site.data.mainNav %} 
 
 	{% include quick-contact.html className = "quick-contact" data = site.data.quickContact %} 
 

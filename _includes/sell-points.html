@@ -1,1 +1,13 @@
-{% include section.html body = "entry-list.html" data = include.data %} 
+{% assign sellPoints = include.data %} 
+{% assign points = sellPoints.entries %} 
+
+
+<section class= "sell-points"> 
+	<ul class= "entry-list sell-points-entry-list">
+		{% for point in points %} 
+			<li class= "entry sell-points-entry"> 
+				{% include block.html data = point %}
+			</li>
+		{% endfor %}
+	</ul>
+</section>

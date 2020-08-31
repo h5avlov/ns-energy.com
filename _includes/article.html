@@ -1,14 +1,33 @@
 {% assign article = include.data %} 
 
+{% if include.level == 1 %} 
+	{% assign className = "article" %} 
+{% else %} 
+	{% assign className = "article-section" %}
+{% endif %} 
+ 
+{% if include.className %} 
+	{% assign className = className | append: " " | append: include.className %} 
+{% endif %}
 
-<article>  
+
+<article class= "{{ className }}">  
 	{% include heading.html level = include.level data = article.heading %} 
 
-	{% include text.html data = article.text %} 
+	{% if article.text %}
+		{% include text.html data = article.text %} 
+	{% endif %} 
 
-	{% for section in article.sections %} 
-		{% assign level = include.level | plus: 1 %} 
-		{% include article.html data = section level = level %} 
-	{% endfor %} 
+	{% if article.image %} 
+		{% include image.html data = article.image %} 
+	{% endif %}
+
+	{% if article.sections %} 
+		{% for section in article.sections %} 
+			{% assign level = include.level | plus: 1 %} 
+
+			{% include article.html data = section level = level %} 
+		{% endfor %} 
+	{% endif %}
 
 </article>

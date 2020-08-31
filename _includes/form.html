@@ -9,12 +9,14 @@
 			placeholder= "{{ field.value }}" 
 		{% endcapture %} 
 
-		{% case field.element %} 
-			{% when "input" %} 
-				<input {{ props }} type= "{{ field.type }}" /> 
-			{% when "textarea" %} 
-				<textarea {{ props }}></textarea> 
-		{% endcase %}
+		<label for= "{{ field.name }}"> 
+			{% case field.element %} 
+				{% when "input" %} 
+					<input {{ props }} type= "{{ field.type }}" /> 
+				{% when "textarea" %} 
+					<textarea {{ props }}></textarea> 
+			{% endcase %}
+		</label>
 	{% endfor %} 
 
 	<button type= "submit">{{ data.submit.text }}</button> 

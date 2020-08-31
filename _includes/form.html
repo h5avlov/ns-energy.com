@@ -1,7 +1,7 @@
 {% assign data = include.data %} 
 {% assign fields = data.fields %} 
 
-<form action="post"> 
+<form method= "POST" action= ""> 
 	{% for field in fields %} 
 		{% capture props %} 
 			name= "{{ field.name }}"  

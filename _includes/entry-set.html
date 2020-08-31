@@ -1,20 +1,25 @@
 {% assign data = include.data %} 
-{% assign entries = data.entries %} 
+{% assign contacts = data.entries %} 
 
 
-{% for entry in entries %} 
+{% for contact in contacts %} 
 
-	<article class= "entry set-entry"> 
+	{% assign className = "" %} 
+	{% if contact.className %} 
+		{% assign className = " " | append: contact.className %} 
+	{% endif %}
 
-		{% if entry.heading %}
-			{% include heading.html level = data.level data = entry.heading %} 
+	<article class= "entry{{ className }}"> 
+
+		{% if contact.heading %}
+			{% include heading.html level = data.level data = contact.heading %} 
 		{% endif %}
 
-		{% if entry.text %}
-			{% include text.html data = entry.text %} 
+		{% if contact.text %}
+			{% include text.html data = contact.text %} 
 		{% endif %}
 		
-		{% include key-value-pair-list.html data = entry.entries %} 
+		{% include key-value-pair-list.html data = contact.entries %} 
 
 	</article>
 

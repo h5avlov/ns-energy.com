@@ -1,6 +1,8 @@
 { 
 	"head": { 
-		"heading": {}, 
+		"heading": { 
+			"text": "Our Contacts" 
+		}, 
 		"text": [] 
 	}, 
 
@@ -9,6 +11,8 @@
 
 		"entries": [ 
 			{ 
+				"className": "address", 
+
 				"heading": {
 					"text": "Address"
 				}, 
@@ -40,6 +44,8 @@
 			}, 
 
 			{ 
+				"className": "phone", 
+
 				"heading": {
 					"text": "Phone"
 				}, 
@@ -61,6 +67,8 @@
 			}, 
 
 			{ 
+				"className": "email", 
+
 				"heading": {
 					"text": "Email"
 				}, 

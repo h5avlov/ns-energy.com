@@ -1,0 +1,14 @@
+{% assign article = include.data %} 
+
+
+<article>  
+	{% include heading.html level = include.level data = article.heading %} 
+
+	{% include text.html data = article.text %} 
+
+	{% for section in article.sections %} 
+		{% assign level = include.level | plus: 1 %} 
+		{% include article.html data = section level = level %} 
+	{% endfor %} 
+
+</article>

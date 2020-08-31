@@ -6,27 +6,27 @@
 
 		"entries": [ 
 			{
-				"target": "1", 
+				"target": "/", 
 				"text": "Home"
 			}, 
 
 			{
-				"target": "2",
+				"target": "/products.html",
 				"text": "Products"
 			},
 
 			{
-				"target": "3",
+				"target": "/about-us.html",
 				"text": "About"
 			},
 
 			{
-				"target": "4", 
+				"target": "/info.html", 
 				"text": "Questions" 
 			}, 
 
 			{
-				"target": "4", 
+				"target": "/contacts.html", 
 				"text": "Contacts" 
 			} 
 

@@ -4,11 +4,13 @@
 <article class= "id"> 
 	<h1 class= "heading site-title"> 
 
-		{% capture logo %} 
-			{% include image.html className = "logo" data = id.logo %} 
-		{% endcapture %} 
+		{% if id.logo %} 
+			{% capture logo %} 
+				{% include image.html className = "logo" data = id.logo %} 
+			{% endcapture %} 
+		{% endif %}
 
-		{% include link.html image = logo text = "Home" target = "/" %} 
+		{% include link.html className = "home-link" image = logo target = "/" %} 
 
 	</h1> 
 

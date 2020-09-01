@@ -3,7 +3,8 @@
 		"organization": "Foundation", 
 		"tagline": "Build fast",  
 		"logo": { 
-			"src": null 
+			"src": "/images/image-src.jpg", 
+			"alt": "" 
 		} 
 	}, 
 

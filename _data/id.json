@@ -3,7 +3,8 @@
 	"tagline": "Build fast", 
 	"description": "Basic template for developing static websites", 
 	"logo": { 
-		"src": null 
+		"src": "/images/color-wall.jpg", 
+		"alt": "wall in color" 
 	}
 
 }

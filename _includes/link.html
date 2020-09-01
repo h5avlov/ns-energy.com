@@ -1,10 +1,12 @@
-{% assign link = include.data %} 
+{% assign target = include.target %} 
+{% assign text = include.text %} 
+{% assign image = include.image %} 
 
 
-<a class= "{{ 'link' | append: ' ' | append: include.className | rstrip }}" href= "{{ link.target }}">
-	{{ link.text }} 
+<a class= "{{ 'link' | append: ' ' | append: include.className | rstrip }}" href= "{{ target }}"> 
+	{{ text }} 
 
-	{% if link.image %}
-		{% include image.html className = "link-image" data = link.image %} 
+	{% if image %}
+		{{ image }} 
 	{% endif %}
 </a> 

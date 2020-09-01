@@ -2,13 +2,15 @@
 
 
 <article class= "id"> 
-	<h5 class= "heading site-title">
-		{{ id.organization }} 
+	<h1 class= "heading site-title"> 
 
-		{% if id.logo %}
+		{% capture logo %} 
 			{% include image.html className = "logo" data = id.logo %} 
-		{% endif %} 
-	</h5> 
+		{% endcapture %} 
+
+		{% include link.html image = logo text = "Home" target = "/" %} 
+
+	</h1> 
 
 	{% if id.tagline %}
 		<p class= "tagline">{{ id.tagline }}</p> 

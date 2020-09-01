@@ -1,12 +1,8 @@
 {% assign paragraph = include.data %} 
-
-{% assign className = "" %} 
-{% if include.className %} 
-	{% assign className = " " | append: include.className %} 
-{% endif %}
+{% assign className = include.className %} 
 
 
-<p class= "text-entry{{ className }}"> 
+<p class= "text-entry {{ className }}"> 
 	{{ paragraph.text }}
 
 	{% if paragraph.image %} 

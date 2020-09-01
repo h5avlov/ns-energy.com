@@ -1,14 +1,14 @@
 {% assign list = include.data %}
-
 {% assign template = list.template %}  
-{% assign level = list.level %} 
-{% assign entries = list.entries %} 	
+{% assign entries = list.entries %} 
 
 
-<ul class= "entry-list"> 
+{% include assign-class-name.html className = "nav-entry-list" %}
+<ul class= "entry-list{{ className }}"> 
+	{% include assign-class-name.html className = "nav-entry" %}
 	{% for entry in entries %} 
-		<li class= "entry"> 
-			{% include {{ template }} level = level data = entry %} 
+		<li class= "entry{{ className }}"> 
+			{% include {{ template }} data = entry %} 
 		</li>
 	{% endfor %} 
 </ul>

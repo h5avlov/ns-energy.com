@@ -1,8 +1,10 @@
 {
 	"heading": "Main navigation", 
+	"entryListClassName": "nav-entry-list", 
 
-	"body": {
+	"body": { 
 		"template": "link.html", 
+		"entryClassName": "nav-entry", 
 
 		"entries": [ 
 			{
@@ -11,18 +13,13 @@
 			}, 
 
 			{
-				"target": "/products.html",
-				"text": "Products"
-			},
-
-			{
 				"target": "/about-us.html",
 				"text": "About"
 			},
 
 			{
-				"target": "/info.html", 
-				"text": "Questions" 
+				"target": "/frequently-asked-questions.html", 
+				"text": "Frequently Asked Questions" 
 			}, 
 
 			{

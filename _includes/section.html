@@ -1,16 +1,26 @@
 {% assign data = include.data %} 
-{% assign template = include.body %} 
-{% assign head = data.head %} 
-{% assign body = data.body %}
 
 
 <section class= "section {{ include.className }}"> 
 	
-	{% if head %}
-		{% include block.html level = 2 data = head %} 
+	{% if data.head %}	
+		{% assign head = data.head %} 
+
+		{% include heading.html className = "section-heading" level = 2 text = head.heading.text %} 
+
+		{% if head.text %}
+			{% include text.html data = head.text %} 
+		{% endif %} 
+
+		{% if head.image %} 
+			{% include image.html data = head.image %} 
+		{% endif %}
 	{% endif %}
 
-	{% if body %} 
+	{% if data.body %} 
+		{% assign body = data.body %}
+		{% assign template = include.body %}  
+
 		<section class= "body"> 
 			{% include {{ template }} data = body %} 
 		</section>

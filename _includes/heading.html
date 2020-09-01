@@ -1,5 +1,5 @@
-{% assign heading = include.data %} 
-{% assign level = include.level %}
+{% assign level = include.level %} 
+{% assign text = include.text %}
+{% assign className = include.className %} 
 
-
-<h{{ level }} class= "heading">{{ heading.text }}</h{{ level }}> 
+<h{{ level }} class= "heading {{ className }}">{{ text }}</h{{ level }}> 

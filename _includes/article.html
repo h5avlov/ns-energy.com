@@ -13,7 +13,7 @@
 
 <article class= "{{ className }}">  
 	
-	{% include heading.html level = include.level data = article.heading %} 
+	{% include heading.html level = include.level text = article.heading.text %} 
 
 	{% if article.text %}
 		{% include text.html data = article.text %} 

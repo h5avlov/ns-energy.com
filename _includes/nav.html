@@ -1,4 +1,10 @@
-{% assign entries = include.data %}
+{% assign links = include.data %}
 
 
-{% include entry-list.html entryListClassName = "nav-entry-list" entryClassName = "nav-entry" data = entries %} 	
+<ul class= "entry-list nav-entry-list">
+	{% for link in links  %} 
+		<li class= "entry nav-entry"> 
+			{% include link.html className = "nav-link" data = link %} 
+		</li>
+	{% endfor %}
+</ul>

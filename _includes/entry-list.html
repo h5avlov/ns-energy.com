@@ -3,11 +3,9 @@
 {% assign entries = list.entries %} 
 
 
-{% include assign-class-name.html className = "nav-entry-list" %}
-<ul class= "entry-list{{ className }}"> 
-	{% include assign-class-name.html className = "nav-entry" %}
+<ul class= "entry-list {{ prefix }}-entry-list"> 
 	{% for entry in entries %} 
-		<li class= "entry{{ className }}"> 
+		<li class= "entry {{ prefix }}-entry"> 
 			{% include {{ template }} data = entry %} 
 		</li>
 	{% endfor %} 

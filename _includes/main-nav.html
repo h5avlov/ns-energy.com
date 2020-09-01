@@ -2,9 +2,7 @@
 
 
 <nav class= "main-nav"> 
-	<h6 class= "heading access-heading">{{ nav.heading }}</h6> 
-
-	{% include heading.html className = "heading access-heading" level = 6 text = nav.heading.text %} 
+	{% include heading.html className = "access-heading" level = 6 text = nav.heading %} 
 
 	{% include nav.html data = nav.entries %} 
 </nav> 

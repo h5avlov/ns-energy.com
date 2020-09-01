@@ -2,17 +2,17 @@
 
 
 <article class= "id"> 
-	<h1 class= "heading site-title">
+	<h5 class= "heading site-title">
 		{{ id.organization }} 
 
 		{% if id.logo %}
-			{% assign logo = id.logo %} 
-			
-			<img class= "logo" src= "{{ logo.src }}" alt= "{{ logo.alt }}" /> 
+			{% include image.html className = "logo" data = id.logo %} 
 		{% endif %} 
-	</h1> 
+	</h5> 
 
 	{% if id.tagline %}
 		<p class= "tagline">{{ id.tagline }}</p> 
+
+		{% include paragraph.html className = "tagline" data = id.tagline %} 
 	{% endif %} 
 </article> 

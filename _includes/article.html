@@ -1,17 +1,18 @@
 {% assign article = include.data %} 
 
+
 {% if include.level == 1 %} 
 	{% assign className = "article" %} 
+	{% assign wrapper = "article" %}
 {% else %} 
-	{% assign className = "article-section" %}
+	{% assign className = "article-section" %} 
+	{% assign wrapper = "section" %}
 {% endif %} 
  
-{% if include.className %} 
-	{% assign className = className | append: " " | append: include.className %} 
-{% endif %}
+{% include add-class-name.html %} 
 
 
-<article class= "{{ className }}">  
+<{{ wrapper }} class= "{{ className }}">  
 	
 	{% include heading.html level = include.level text = article.heading.text %} 
 
@@ -31,4 +32,4 @@
 		{% endfor %} 
 	{% endif %}
 
-</article>
+</{{ wrapper }}> 

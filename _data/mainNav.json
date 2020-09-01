@@ -2,32 +2,27 @@
 	"heading": "Main navigation", 
 	"entryListClassName": "nav-entry-list", 
 
-	"body": { 
-		"template": "link.html", 
-		"entryClassName": "nav-entry", 
+	"entries": [ 
+		{
+			"target": "/", 
+			"text": "Home"
+		}, 
 
-		"entries": [ 
-			{
-				"target": "/", 
-				"text": "Home"
-			}, 
+		{
+			"target": "/about-us.html",
+			"text": "About"
+		},
 
-			{
-				"target": "/about-us.html",
-				"text": "About"
-			},
+		{
+			"target": "/frequently-asked-questions.html", 
+			"text": "Frequently Asked Questions" 
+		}, 
 
-			{
-				"target": "/frequently-asked-questions.html", 
-				"text": "Frequently Asked Questions" 
-			}, 
+		{
+			"target": "/contacts.html", 
+			"text": "Contacts" 
+		} 
 
-			{
-				"target": "/contacts.html", 
-				"text": "Contacts" 
-			} 
-
-		] 
-	}
+	] 
 
 }

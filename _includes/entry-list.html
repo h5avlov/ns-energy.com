@@ -1,9 +1,10 @@
 {% assign list = include.data %}
 {% assign template = list.template %}  
 {% assign entries = list.entries %} 
+{% assign parent = include.parent %}
 
 
-<ul class= "entry-list {{ prefix }}-entry-list"> 
+<ul class= "{{ "entry-list" | append: " " | append: parent | append: "-entry-list" | rstrip }}"> 
 	{% for entry in entries %} 
 		<li class= "entry {{ prefix }}-entry"> 
 			{% include {{ template }} data = entry %} 

@@ -3,13 +3,8 @@
 {% assign head = data.head %} 
 {% assign body = data.body %}
 
-{% assign className = "" %} 
-{% if include.className %} 
-	{% assign className = " " | append: include.className %} 
-{% endif %}
 
-
-<section class= "section{{ className }}"> 
+<section class= "section {{ include.className }}"> 
 	
 	{% if head %}
 		{% include block.html level = 2 data = head %} 

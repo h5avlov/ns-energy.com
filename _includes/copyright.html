@@ -1,12 +1,12 @@
-{% assign data = include.data %} 
+{% assign entries = include.data %} 
 
 
-<article class= "copyright"> 
+<article class= "copyright">  
 
-	{% include paragraph.html className = "year" data = data.year %}
-
-	{% include paragraph.html className = "id" data = data.id %} 
-
-	{% include paragraph.html className = "notice" data = data.notice %} 
+	{% for entry in entries %} 
+		{% assign key = entry[ 0 ] %}
+		
+		{% include paragraph.html className = key data = data.year %} 
+	{% endfor %}
 
 </article> 

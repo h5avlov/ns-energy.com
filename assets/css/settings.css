@@ -23,20 +23,22 @@
 	--heading-font-family: ArialBlack; 
 
 	/* Points to the font, used by icons */
-	--icon-font-family: FontAwesome; 
+	--icon-font-family: IonIcons; 
 
 	/* Assigns icons */
-	--open-nav-button-icon: "\f0c9";
-	--close-nav-button-icon: "\f00d";
-	--prev-button-icon: "\f0d9";
-	--next-button-icon: "\f0da"; 
+	--open-nav-button-icon: "\f20e"; 
+	--close-nav-button-icon: "\f404"; 
+	--scroll-to-top-button-icon: "\f3d7"; 
+	--address-icon: "\f448"; 
+	--phone-icon: "\f4b9"; 
+	--email-icon: "\f423"; 
 
 	/**
 	 * Color
 	 */
 
 	/* Main text color */
-	--text-color: #555; 
+	--text-color: rgba( 0, 0, 0, 0.4 ); 
 	/* Color behind text */
 	--text-background-color: rgba( 255, 255, 255, 0.7 );
 	/* Color of text section, overlapping another section or an image */

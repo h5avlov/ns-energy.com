@@ -7,15 +7,25 @@
 		{% assign head = data.head %} 
 
 		{% if head.heading %}
-			{% include heading.html className = "section-heading" level = 2 text = head.heading.text %} 
+			{% include heading.html 
+				className = "section-heading" 
+				level = 2 
+				text = head.heading.text 
+			%} 
 		{% endif %} 
 
 		{% if head.text %}
-			{% include text.html className = "section-text-entry" data = head.text %} 
+			{% include text.html 
+				className = "section-text-entry" 
+				data = head.text 
+			%} 
 		{% endif %} 
 
 		{% if head.image %} 
-			{% include image.html className = "section-image" data = head.image %} 
+			{% include image.html 
+				className = "section-image" 
+				data = head.image 
+			%} 
 		{% endif %}
 	{% endif %}
 

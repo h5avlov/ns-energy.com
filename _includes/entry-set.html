@@ -12,7 +12,10 @@
 	<article class= "entry{{ className }}"> 
 
 		{% if contact.heading %}
-			{% include heading.html level = data.level text = contact.heading.text %} 
+			{% include heading.html 
+				level = data.level 
+				text = contact.heading.text 
+			%} 
 		{% endif %}
 
 		{% if contact.text %}

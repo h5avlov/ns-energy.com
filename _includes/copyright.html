@@ -5,8 +5,12 @@
 
 	{% for entry in entries %} 
 		{% assign key = entry[ 0 ] %}
+		{% assign value = entry[ 1 ] %}
 
-		{% include paragraph.html className = key data = data.year %} 
+		{% include paragraph.html 
+			className = key 
+			data = value 
+		%} 
 	{% endfor %}
 
 </article> 

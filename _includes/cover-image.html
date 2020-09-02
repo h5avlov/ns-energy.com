@@ -2,7 +2,9 @@
 
 
 <figure class= "cover-image"> 
-	{% include image.html data = figure.image %} 
+	{% include image.html 
+		data = figure.image 
+	%} 
 
 	{% if figure.caption %}
 		<figcaption class= "caption">{{ figure.caption }}</figcaption> 

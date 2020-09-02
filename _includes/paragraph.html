@@ -6,6 +6,9 @@
 	{{ paragraph.text }}
 
 	{% if paragraph.image %} 
-		{% include image.html className = "inline-image" data = paragraph.image %} 
+		{% include image.html 
+			className = "inline-image" 
+			data = paragraph.image 
+		%} 
 	{% endif %}
 </p>

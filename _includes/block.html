@@ -4,7 +4,10 @@
 
 {% capture text-content %} 
 	{% if block.heading %}
-		{% include heading.html level = level text = block.heading.text %} 
+		{% include heading.html 
+			level = level 
+			text = block.heading.text 
+		%} 
 	{% endif %}
 
 	{% if block.text %}

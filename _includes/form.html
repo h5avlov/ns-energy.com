@@ -5,12 +5,13 @@
 <form method= "POST" action= ""> 
 	{% for field in fields %} 
 		{% capture props %} 
+			class= "field" 
 			name= "{{ field.name }}"  
 			required= "{{ field.required }}" 
 			placeholder= "{{ field.value }}" 
 		{% endcapture %} 
 
-		<label for= "{{ field.name }}"> 
+		<label class= "label" for= "{{ field.name }}"> 
 			{% case field.element %} 
 				{% when "input" %} 
 					<input {{ props }} type= "{{ field.type }}" /> 

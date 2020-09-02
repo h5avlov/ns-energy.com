@@ -16,13 +16,8 @@
 	Layout
 ----------------------------------------------------------------- */
 
-.write-us { 
-	box-sizing: border-box; 
-} 
-
-
 .send-message { 
-	display: flex; flex-direction: row; flex-wrap: wrap; 
+	display: flex; flex-direction: column; flex-wrap: wrap; 
 	max-width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
 	position: relative; 
 } 
@@ -33,7 +28,7 @@
 
 .send-message .label, 
 .send-message .submit-button { 
-	width: var( --field-width ); height: 3.25rem; 
+	width: var( --field-width ); height: var( --field-height ); 
 } 
 
 .send-message .label { 

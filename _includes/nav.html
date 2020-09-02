@@ -4,7 +4,11 @@
 <ul class= "entry-list nav-entry-list">
 	{% for link in links  %} 
 		<li class= "entry nav-entry"> 
-			{% include link.html className = "nav-link" data = link %} 
+			{% include link.html 
+				className = "nav-link" 
+				text = link.text 
+				target = link.target 
+			%} 
 		</li>
 	{% endfor %}
 </ul>

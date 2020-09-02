@@ -54,17 +54,18 @@ leaving some distance from window edges, achieving that by using transparent bor
 }
 
 /* Taking into account styling, semantics and SEO, an image is represented as a figure element with an image element as its descendant */
-.image {
-	height: 150px; 
-}
 
-figure.image {
+.cover-image { 
+	height: 150px; 
+} 
+
+/* figure.image {
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 
 	background-image: none !important; background-color: #999; 
-}
+} */
 
-.image img {
-	display: none !important; 
+.cover-image .image {
+	display: none; 
 } 
 
 .details-link {

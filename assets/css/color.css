@@ -1,6 +1,11 @@
 body {
 	color: #555; 
 	background-color: #EEE; 
+} 
+
+.cover-image { 
+	background-color: #444; 
+
 }
 
 /**

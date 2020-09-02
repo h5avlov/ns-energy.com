@@ -6,12 +6,12 @@
 	 * Layout
 	 */
 
-	/* Constrains the width of the page content on larger screens, applied on sections */
+	/* Constrains the width of the page on larger screens, applied on sections */
 	--max-page-width: 1420px; 
-	/* Constrains the width of the page text content */
+	/* Constrains the width of the page content */
 	--max-content-width: 960px;  
 
-	/* Defines space around not full width sections on smaller screens */
+	/* Defines space around sections, that are not full width on smaller screens */ 
 	--content-padding-left: 1.25rem; 
 	--content-padding-right: 1.25rem;
 

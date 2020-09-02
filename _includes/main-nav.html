@@ -8,5 +8,11 @@
 		text = nav.heading 
 	%} 
 
-	{% include nav.html data = nav.entries %} 
+	<section class= "nav"> 
+		{% include nav.html data = nav.entries %} 
+
+		{% include button.html className = "close-nav-button" text = "Close Navigation" %} 
+	</section>
+
+	{% include button.html className = "open-nav-button" text = "Open Navigation" %} 
 </nav> 

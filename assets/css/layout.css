@@ -1,16 +1,16 @@
 /* Separates paragraph or paragraphs visually from headings and buttons */
 .heading, 
-.text:last-of-type {
+.text-entry:last-of-type {
 	margin-bottom: 1.8rem; 
 }
 
 /* Paragraphs distance */
-.text {
+.text-entry {
 	margin-bottom: 1.2em;
 }
 
 /* Removes bottom margin from paragraphs, that have no adjacent elements */
-.text:last-child {
+.text-entry:last-child {
 	margin-bottom: 0; 
 }
 
@@ -25,16 +25,15 @@ leaving some distance from window edges, achieving that by using transparent bor
 	border-left-width: var( --content-padding-left ); border-right-width: var( --content-padding-right ); 
 }
 
-	/* Not full width sections */
-	.header, 
-	.plus-points {
-		max-width: var( --max-content-width ); 
-	}
+/* Not full width sections */
+.header {
+	max-width: var( --max-content-width ); 
+}
 
-	/* Full width sections, without leaving distance from window edges */
-	.offer-list {
-		border-left-width: 0; border-right-width: 0; 
-	}
+/* Full width sections, without leaving distance from window edges */
+.sell-points {
+	border-left-width: 0; border-right-width: 0; 
+}
 
 /* Sections and their body section are positioned to contain all their absolutely positioned elements */
 .section, 
@@ -49,7 +48,7 @@ leaving some distance from window edges, achieving that by using transparent bor
 
 /* Usability headings are not a visual part of the page */
 .usability-heading, 
-.offer-list .head {
+.sell-points .head {
 	display: none; 
 
 }
@@ -66,13 +65,19 @@ figure.image {
 
 .image img {
 	display: none !important; 
+} 
+
+.details-link {
+	display: inline-block; 
+	padding: var( --button-padding-y) var( --button-padding-x ); 
+	border: 1px solid; 
 }
 
-/* Buttons are displayed as inline-block to adapt to their label */
+/* Buttons are displayed as inline-block to adapt sizewise to their label */ 
 .button {
-	display: inline-block; 
-	padding: 1.25rem 1.75rem; 
-	border: 1px solid;
+	display: inline-block;  
+	border: 1px solid; 
+	cursor: pointer; 
 }
 
 
@@ -81,47 +86,46 @@ figure.image {
  */
 
 /* Control buttons are placed next to each other, using flexbox */
-.bx-controls-direction {
+/* .bx-controls-direction {
 	display: flex; flex-direction: row; 
 	position: absolute; 
-}
+} */
 
 /* Creates the vertical separating line between the two control buttons */
-.bx-controls-direction:before {
+/* .bx-controls-direction:before {
 	display: block;
 	width: 1px; height: 100%;
 	position: absolute; left: 50%; top: 0;  
 	z-index: 4; 
 	content: ""; 
 
-}
+} */
 
 /* Control button is relatively positioned to hold the absolutely positioned :before, holding the icon */
-.bx-controls-direction a {
+/* .bx-controls-direction a {
 	display: block; 
 	width: 6rem; height: 5rem;	
 	position: relative; 
 	border: none;  
 	cursor: pointer; 
-}
+} */
 
 /* The :before element is stretched all over the button and its content, the icon, is centered */
-.nav-control-buttons :before, 
-.bx-controls-direction :before {
+.button:before {
 	display: flex; align-items: center; justify-content: center; 
 	width: 100%; height: 100%; 
 	position: absolute; left: 0; top: 0; z-index: 2; 	
 }
 
 /* Button separating line and buttons are not fully opaque in their normal state */
-.bx-controls-direction:before, 
+/* .bx-controls-direction:before, 
 .bx-controls-direction :before {
 	opacity: 0.45; 
-}
+} */
 
 /* On mouse over the control button set, the separator and the targeted button become fully opaque */
-.bx-controls-direction:hover:before, 
+/* .bx-controls-direction:hover:before, 
 .bx-controls-direction a:hover:before {
 	opacity: 1; 
-}
+} */
 

@@ -1,19 +1,7 @@
 { 
-	"head": {
-		"heading": { 
-			"text": "Banner" 
-		}, 
-		
-		"text": [ 
-			{ 
-				"text": "Banner Text" 
-			}
-		]
-	}, 
-
 	"body": { 
 		"template": "block.html", 
-		"level": 3, 
+		"level": 3,  
 
 		"entries": [ 
 			{ 
@@ -22,7 +10,7 @@
 				}, 
 				"text": [ 
 					{ 
-						"text": "Slide Text 1" 
+						"text": "Pellentesque odio velit, pharetra nec venenatis eu, gravida vel velit. In hac habitasse platea dictumst. In pulvinar purus vel eleifend bibendum. Mauris vitae nibh ut enim euismod luctus vitae nec nulla. Duis tempor porttitor vulputate. Curabitur eget tincidunt massa." 
 					}
 				], 
 				"link": { 
@@ -36,7 +24,21 @@
 				}, 
 				"text": [ 
 					{ 
-						"text": "Slide Text 2" 
+						"text": "Pellentesque odio velit, pharetra nec venenatis eu, gravida vel velit. In hac habitasse platea dictumst. In pulvinar purus vel eleifend bibendum. Mauris vitae nibh ut enim euismod luctus vitae nec nulla. Duis tempor porttitor vulputate. Curabitur eget tincidunt massa." 
+					}
+				], 
+				"link": { 
+					"text": "Read More" 
+				}
+			}, 
+
+			{ 
+				"heading": { 
+					"text": "Slide Heading 3"
+				}, 
+				"text": [ 
+					{ 
+						"text": "Pellentesque odio velit, pharetra nec venenatis eu, gravida vel velit. In hac habitasse platea dictumst. In pulvinar purus vel eleifend bibendum. Mauris vitae nibh ut enim euismod luctus vitae nec nulla. Duis tempor porttitor vulputate. Curabitur eget tincidunt massa." 
 					}
 				], 
 				"link": { 

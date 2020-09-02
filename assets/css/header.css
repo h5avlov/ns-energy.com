@@ -5,12 +5,12 @@
 /* Direct descendant elements of header and main navigation are horizontally aligned */
 .header, 
 .main-nav .nav-entry-list {
-	display: flex; flex-direction: row; align-items: center; 
+	display: flex; align-items: center; 
 }
 
 /* ID and main navigation horizontal centers are aligned */
 .header {    
-	justify-content: space-between; 
+	flex-direction: column;  
 
 	/* Gives header content the width of the content, when header has full width */ 
 	/* max-width: none; 
@@ -24,7 +24,7 @@
 	/* Takes care of header background */
 	background-clip: padding-box; 
 
-	height: var( --header-height );
+	/* height: var( --header-height ); */ 
 
 	/* Pulls slider under header */
 	/* height: var( --header-height ); margin-bottom: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); */
@@ -35,40 +35,39 @@
 }
 
 /* Gives distance between ID and main navigation */
-.header .id { 
+/* .header .id { 
 	margin-right: 5rem; 
-}
+} */
 
 .site-title {
-	height: 4rem; line-height: 4rem; 
+	/* height: 4rem; line-height: 4rem;  */ 
 	margin-bottom: 0; 
 }	
 
 /* Mobile navigation background */
-.main-nav:after {
+/* .main-nav:after {
 	display: none; 
 	width: 100%; height: 100%; 
 	position: fixed; left: 0; top: 0; z-index: 2; 
 	background-color: rgba( 255, 255, 255, 1 ); 
 	content: "";
-}
+} */
 
 
 /**
  * Navigation visibility control buttons 
- */
+ */ 
 
-.open-nav-button, 
-.close-nav-button {
-	display: none; 
+.main-nav .button {
+	display: none;  
 	width: var( --header-height ); height: var( --header-height ); 	
 	position: relative; 
 	border: none; 
 }
 
-.close-nav-button {
+/* .close-nav-button {
 	position: fixed; 
-}
+} */
 
 /* Navigation link clickable sizing */
 .main-nav .nav-link {
@@ -82,7 +81,8 @@
 	Typography
 ----------------------------------------------------------------- */
 
-.site-title, .main-nav .nav-link {
+.site-title, 
+.main-nav .nav-link {
 	text-transform: uppercase; 
 }
 
@@ -92,6 +92,21 @@
 
 .main-nav .nav-link {
 	font-size: 0.85rem; 
+} 
+
+/**
+ * Sets navigation control button icons 
+ */
+
+/* Assigns open button icon */
+.open-nav-button:before {
+	content: var( --open-nav-button-icon ); 
+}
+
+/* Assigns close button icon */
+.close-nav-button:before { 
+	font-size: 1.4rem; 
+	content: var( --close-nav-button-icon ); 
 }
 
 
@@ -106,19 +121,18 @@
 
 .open-nav-button, 
 .close-nav-button { 
-	/* color: var( --text-box-color );  */
+	color: var( --text-color ); 
 	background-color: transparent; 
 }
 
 .open-nav-button:hover, 
 .close-nav-button:hover { 
-	color: var( --text-box-color ); 
+	color: var( --text-color ); 
 	background-color: #EEE;  
 }
 
-.main-nav.open .nav-link, 
-.close-nav-button:before {
-	color: #EEE;
+.main-nav.open .nav-link {
+	color: #EEE; 
 }
 
 

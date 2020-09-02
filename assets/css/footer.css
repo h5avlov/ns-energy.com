@@ -2,29 +2,14 @@
 	Layout
 ----------------------------------------------------------------- */
 
-.footer, 
-.footer-nav {
+.footer {
 	display: flex; align-items: center; 
 }
 
 .footer {
 	flex-direction: column; 
 	margin-top: 4rem; margin-bottom: 4rem; 
-}
-
-.footer-nav {
-	flex-direction: row; 
-	margin-top: 2.75rem; margin-bottom: 2.75rem;
-}
-
-.footer-nav .entry:last-child {
-	margin-right: 0; 
-}
-
-.footer-nav .nav-link {
-	padding: 1.4rem;  
-
-}
+} 
 
 .copyright {
 	align-self: stretch; 	
@@ -43,10 +28,10 @@
 
 }
 
-.scroll-to-top:before {
+/* .scroll-to-top:before {
 	display: block; 
 
-}
+} */
 
 
 /* -----------------------------------------------------------------
@@ -64,8 +49,8 @@
 }
 
 .scroll-to-top:before {
-	font-family: FontAwesome; font-size: 3.2rem;  
-	content: "\f106"; 
+	font-family: var( --icon-font-family ); font-size: 3.2rem;  
+	content: var( --scroll-to-top-button-icon ); 
 }
 
 

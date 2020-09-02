@@ -4,13 +4,13 @@
 
 /* Arial Black font declaration */
 @font-face {
-	font-family: var( --heading-font-family ); 
-	src: url( "/fonts/ariblk.ttf" ); 
+	font-family: ArialBlack; 
+	src: url( "/assets/fonts/ariblk.ttf" ); 
 }
 
 /* Ionicons font declaration */ 
 @font-face {
-	font-family: var( --icon-font-family ); 
+	font-family: IonIcons; 
 	src: url( "/assets/fonts/ionicons.ttf" ); 
 
 }
@@ -25,16 +25,16 @@ body {
 /* Heading style */
 .heading {
 	font-family: var( --heading-font-family ); 
-	font-size: 2.2rem; 
-	line-height: 1.2; 
+	font-size: var( --heading-font-size ); 
+	line-height: var( --heading-line-height ); 
 	text-transform: uppercase; 
 }
 
 /* Paragraph style */
-.text {
+.text-entry {
 	font-family: Arial;
 	font-size: 1.2rem; 
-	line-height: 1.8;
+	line-height: 1.8; 
 }
 
 
@@ -43,20 +43,13 @@ body {
  */
 
 /* Pseudo-element, used as a placeholder for the icon */
-:before {
+.button:before { 
+	font-family: var( --icon-font-family ); 
 	text-indent: 0; 
 }
 
-/* Creates the vertical separating line between the two control buttons */
-.nav-control-buttons :before, 
-.bx-controls-direction :before {
-	font-family: var( --icon-font-family ); 
-	content: ""; 
-}
-
 /* Control button text is moved out of the screen to be replaced with an icon */
-.nav-control-buttons button, 
-.bx-controls-direction a {
+.main-nav .button {
 	text-indent: -10000px; overflow: hidden; 
 	cursor: pointer; 
 }
@@ -66,28 +59,14 @@ body {
  */
 
 /* Assigns prev control button icon */
-.bx-controls-direction .bx-prev:before {
+/* .bx-controls-direction .bx-prev:before {
 	content: var( --prev-button-icon ); 
-}
+} */
 
 /* Assigns next control button icon */
-.bx-controls-direction .bx-next:before {
+/* .bx-controls-direction .bx-next:before {
 	content: var( --next-button-icon ); 
-}
-
-/**
- * Sets navigation control button icons 
- */
-
-/* Assigns open button icon */
-.open-nav-button:before {
-	content: var( --open-nav-button-icon );
-}
-
-/* Assigns close button icon */
-.close-nav-button:before {
-	content: var( --close-nav-button-icon ); 
-}
+} */
 
 .button {
 	font-size: 1.2rem;

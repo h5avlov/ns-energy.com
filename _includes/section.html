@@ -26,6 +26,13 @@
 				className = "section-image" 
 				data = head.image 
 			%} 
+		{% endif %} 
+
+		{% if head.link %} 
+			{% include link.html 
+				className = "details-link" 
+				text = "Read More" 
+			%} 
 		{% endif %}
 	{% endif %}
 

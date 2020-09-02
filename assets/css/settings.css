@@ -2,6 +2,7 @@
 	/* Font size in pixels to serve as the rem-units base  */
 	--base-font-size: 14px;
 
+
 	/**
 	 * Layout
 	 */
@@ -13,14 +14,26 @@
 
 	/* Defines space around sections, that are not full width on smaller screens */ 
 	--content-padding-left: 1.25rem; 
-	--content-padding-right: 1.25rem;
+	--content-padding-right: 1.25rem; 
+
+
+	/**
+	 * "Read More" Button 
+	 */
+
+	--button-padding-y: 1.25rem;
+	--button-padding-x: 1.75rem; 
+
 
 	/**
 	 * Font
 	 */
 	
 	--text-font-family: Arial; 
+	
 	--heading-font-family: ArialBlack; 
+	--heading-font-size: 2.2rem; 
+	--heading-line-height: 1.2; 
 
 	/* Points to the font, used by icons */
 	--icon-font-family: IonIcons; 
@@ -33,16 +46,18 @@
 	--phone-icon: "\f4b9"; 
 	--email-icon: "\f423"; 
 
+
 	/**
 	 * Color
 	 */
 
 	/* Main text color */
-	--text-color: rgba( 0, 0, 0, 0.4 ); 
+	--text-color: rgba( 0, 0, 0, 0.7 ); 
 	/* Color behind text */
 	--text-background-color: rgba( 255, 255, 255, 0.7 );
 	/* Color of text section, overlapping another section or an image */
 	--overlay-color: rgba( 255, 255, 255, 0.8 ); 
+
 
 	/**
 	 * Custom

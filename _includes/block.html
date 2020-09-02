@@ -15,7 +15,8 @@
 	{% endif %}
 
 	{% if block.link %}
-		{% include link.html data = block.link %} 
+		{% assign link = block.link %}
+		{% include link.html className = "details-link" text = link.text target = link.target %} 
 	{% endif %} 
 {% endcapture %} 
 

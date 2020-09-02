@@ -15,6 +15,11 @@
 				], 
 				"link": { 
 					"text": "Read More" 
+				}, 
+
+				"image": { 
+					"src": "", 
+					"alt": ""
 				}
 			}, 
 
@@ -29,6 +34,11 @@
 				], 
 				"link": { 
 					"text": "Read More" 
+				}, 
+
+				"image": { 
+					"src": "", 
+					"alt": ""
 				}
 			}, 
 
@@ -43,7 +53,12 @@
 				], 
 				"link": { 
 					"text": "Read More" 
-				}
+				}, 
+
+				"image": { 
+					"src": "", 
+					"alt": ""
+				} 
 			}
 
 		]

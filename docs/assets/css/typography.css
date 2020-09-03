@@ -5,7 +5,7 @@
 /* Arial Black font declaration */
 @font-face {
 	font-family: ArialBlack; 
-	src: url( "/assets/fonts/ariblk.ttf" ); 
+	src: url( "{{ site.baseurl }}/assets/fonts/ariblk.ttf" ); 
 }
 
 /* Ionicons font declaration */ 

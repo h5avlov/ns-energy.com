@@ -1,0 +1,76 @@
+/**
+ * Font declarations 
+ */
+
+/* Arial Black font declaration */
+@font-face {
+	font-family: ArialBlack; 
+	src: url( "/assets/fonts/ariblk.ttf" ); 
+}
+
+/* Ionicons font declaration */ 
+@font-face {
+	font-family: IonIcons; 
+	src: url( "/assets/fonts/ionicons.ttf" ); 
+
+}
+
+/* Sets font size to use as a base for all font sizes */
+html, 
+body {
+	font-family: var( --text-font-family ); 
+	font-size: var( --base-font-size ); 
+}
+
+/* Heading style */
+.heading {
+	font-family: var( --heading-font-family ); 
+	font-size: var( --heading-font-size ); 
+	line-height: var( --heading-line-height ); 
+	text-transform: uppercase; 
+}
+
+/* Paragraph style */
+.text-entry {
+	font-family: Arial;
+	font-size: 1.2rem; 
+	line-height: 1.8; 
+}
+
+
+/**
+ * Control buttons typography styles
+ */
+
+/* Pseudo-element, used as a placeholder for the icon */
+.button:before { 
+	font-family: var( --icon-font-family ); 
+	text-indent: 0; 
+}
+
+/* Control button text is moved out of the screen to be replaced with an icon */
+.main-nav .button {
+	text-indent: -10000px; overflow: hidden; 
+	cursor: pointer; 
+}
+
+/**
+ * Sets control button icons 
+ */
+
+/* Assigns prev control button icon */
+/* .bx-controls-direction .bx-prev:before {
+	content: var( --prev-button-icon ); 
+} */
+
+/* Assigns next control button icon */
+/* .bx-controls-direction .bx-next:before {
+	content: var( --next-button-icon ); 
+} */
+
+.button {
+	font-size: 1.2rem;
+	text-transform: uppercase; 
+}
+
+
